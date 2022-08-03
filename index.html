@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Secret Number Challenge</title>
+</head>
+<body>
+    <script>
+        let rand = Math.floor(Math.random() * 100);
+        let guess = prompt("Guess the secret number between 1 and 100!");
+        let number = false;
+        let guesses = 0;
+
+            while(number == false){
+                if(rand == guess){
+                number = true; 
+                
+            
+            }else{
+                if(rand > guess){
+                    guess = prompt('Higher mayne!!');
+                
+                
+                }else{
+                    guess = prompt('Lower my g');
+                }
+                
+             guesses++;
+            }
+        }
+
+        alert("Exactamundo! It took you a whopping " + guesses + " guesses!");
+
+	</script>
+</body>
